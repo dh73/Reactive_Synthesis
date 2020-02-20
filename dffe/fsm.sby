@@ -1,0 +1,12 @@
+[options]
+mode cover
+
+[engines]
+smtbmc
+
+[script]
+read -sv -DFPV_CHECK fsm.v
+prep -top fsm
+
+[files]
+fsm.v
